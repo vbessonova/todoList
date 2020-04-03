@@ -2,7 +2,7 @@
 
 Stack:
 
-ReactJS (useState, useReducer, useEffect)
-React Router
-Axios
+ReactJS (useState, useReducer, useEffect),
+React Router,
+Axios,
 classnames
