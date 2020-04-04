@@ -1,0 +1,99 @@
+{
+  "lists": [
+    {
+      "name": "Книги",
+      "colorId": 3,
+      "id": 2
+    },
+    {
+      "name": "Фильмы",
+      "colorId": 6,
+      "id": 3
+    },
+    {
+      "name": "Покупки",
+      "colorId": 7,
+      "id": 4
+    }
+  ],
+  "tasks": [
+    {
+      "listId": 3,
+      "text": "История Дэвида Копперфилда",
+      "isDone": false,
+      "id": 1
+    },
+    {
+      "listId": 3,
+      "text": "Облачный атлас",
+      "isDone": true,
+      "id": 2
+    },
+    {
+      "listId": 3,
+      "text": "Детективное агентство Дирка Джентли ",
+      "isDone": true,
+      "id": 3
+    },
+    {
+      "listId": 3,
+      "text": "Мира Дикого Запада",
+      "isDone": true,
+      "id": 4
+    },
+    {
+      "listId": 2,
+      "text": "Понедельник начинается в субботу. Аркадий и Борис Стругацкие.",
+      "isDone": true,
+      "id": 5
+    },
+    {
+      "listId": 2,
+      "text": "\t React и Redux. Функциональная веб-разработка",
+      "isDone": false,
+      "id": 6
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "hex": "#c9d1d3",
+      "name": "c9d1d3"
+    },
+    {
+      "id": 2,
+      "hex": "#42b883",
+      "name": "42b883"
+    },
+    {
+      "id": 3,
+      "hex": "#64c4Ed",
+      "name": "64c4Ed"
+    },
+    {
+      "id": 4,
+      "hex": "#ffbbcc",
+      "name": "ffbbcc"
+    },
+    {
+      "id": 5,
+      "hex": "#b6e6bd",
+      "name": "b6e6bd"
+    },
+    {
+      "id": 6,
+      "hex": "#c355f5",
+      "name": "c355f5"
+    },
+    {
+      "id": 7,
+      "hex": "#09011a",
+      "name": "09011a"
+    },
+    {
+      "id": 8,
+      "hex": "#ff6464",
+      "name": "ff6464"
+    }
+  ]
+}

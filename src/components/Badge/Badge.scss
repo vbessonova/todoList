@@ -1,0 +1,44 @@
+.todo__sidebar__todo-list__task-menu__icon-circle  {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  &.color {
+    &-c9d1d3 {
+      background: #C9D1D3;
+    }
+    &-42b883 {
+      background: #42B883;
+    }
+    &-64c4Ed {
+      background: #64C4ED;
+    }
+    &-ffbbcc {
+      background: #FFBBCC;
+    }
+    &-b6e6bd {
+      background: #B6E6BD;
+    }
+    &-c355f5 {
+      background: #C355F5;
+    }
+    &-09011a {
+      background: #09011A;
+    }
+    &-ff6464 {
+      background: #FF6464;
+    }
+  }
+
+  &.badge-in-add-list {
+    width: 15px;
+    height: 15px;
+
+    cursor: pointer;
+    border: 3px solid transparent;
+
+    &.active {
+      border: 3px solid gray;
+    }
+  }
+}

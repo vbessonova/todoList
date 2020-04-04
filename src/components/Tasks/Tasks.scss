@@ -1,0 +1,221 @@
+.todo__tasks-list__tasks {
+
+  &:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &__title {
+    flex: 1;
+    //color: #64C4ED;
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    border-bottom: 1px solid #F2F2F2;
+
+    &.color {
+      &-c9d1d3 {
+        color: #C9D1D3;
+      }
+      &-42b883 {
+        color: #42B883;
+      }
+      &-64c4Ed {
+        color: #64C4ED;
+      }
+      &-ffbbcc {
+        color: #FFBBCC;
+      }
+      &-b6e6bd {
+        color: #B6E6BD;
+      }
+      &-c355f5 {
+        color: #C355F5;
+      }
+      &-09011a {
+        color: #09011A;
+      }
+      &-ff6464 {
+        color: #FF6464;
+      }
+    }
+
+
+
+
+    &:hover {
+      img {
+        opacity: 0.2;
+      }
+    }
+
+    img {
+      margin-left: 15px;
+      cursor: pointer;
+      opacity: 0;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__tasks-items {
+    margin-top: 30px;
+
+    &__empty-task {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 25px;
+      color: #C9D1D3;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+
+    }
+
+    &__task-row{
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      &__checkbox {
+        input {
+          display: none;
+        }
+
+        svg {
+          transition: opacity 0.15s ease-in-out;
+          path {
+            stroke: #F2F2F2;
+          }
+        }
+
+        input:checked + label {
+          background: #4DD599;
+          border-color: #4DD599;
+
+          svg {
+            opacity: 1;
+            path {
+              stroke: #fff;
+            }
+          }
+        }
+
+        &:hover {
+          label {
+            background-color: #F2F2F2;
+            border-color: #F2F2F2;
+
+            svg {
+              opacity: 1;
+              path {
+                stroke: #B2B2B2;
+              }
+            }
+          }
+        }
+        label {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 2px solid #E8E8E8;
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+          transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+          svg {
+            opacity: 0;
+          }
+        }
+      }
+
+      &__item-row {
+        margin-left: 15px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        color: #000000;
+        border: none;
+        width: 400px;
+      }
+
+      .tasks__items-row-actions {
+         display: flex;
+         align-items: center;
+         opacity: 0;
+         transition: opacity 0.15s ease-in-out;
+         margin-bottom: 15px;
+
+        &:hover {
+          opacity: 1;
+        }
+
+          div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background-color: lighten(#f4f6f8, 2%);
+            border-radius: 6px;
+            margin-left: 5px;
+            cursor: pointer;
+
+            &:hover {
+              background-color: darken(#f4f6f8, 2%);
+              svg {
+                opacity: 0.8;
+              }
+            }
+
+            svg {
+              width: 11px;
+              height: 11px;
+              opacity: 0.4;
+            }
+          }
+
+      }
+    }
+
+    &__tasks-form {
+      .form-new {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        opacity: 0.4;
+        transition: opacity 0.15s ease-in-out;
+        &:hover {
+          opacity: 0.8;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        span {
+          font-size: 16px;
+          margin-left: 15px;
+        }
+      }
+      .block-form {
+        &__btn {
+          button {
+            margin-right: 15px;
+            margin-top: 2px;
+
+          }
+        }
+
+      }
+    }
+  }
+}

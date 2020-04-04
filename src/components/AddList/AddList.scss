@@ -1,0 +1,26 @@
+.todo__sidebar__add-list{
+
+  &__popup {
+
+    width: 235px;
+    height: 150px;
+    background: #FFFFFF;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 18px;
+    position: relative;
+
+    &__close-icon {
+      cursor: pointer;
+      top: -10px;
+      right: -10px;
+      position: absolute;
+
+      &:hover {
+        border-radius: 50%;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.09);
+      }
+    }
+  }
+
+}

@@ -1,0 +1,53 @@
+.todo__sidebar__todo-list {
+  margin-bottom: 30px;
+
+  &__task-menu {
+    display: flex;
+    height: 37px;
+    width: 190px;
+    cursor: pointer;
+    align-items: center;
+
+    &:hover {
+      background: #FFFFFF;
+      box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.07);
+      border-radius: 4px;
+      transition: opacity 0.15s ease-in-out;
+    }
+
+    &.sidebar-list:hover {
+      background: #FFFFFF;
+      box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.07);
+      border-radius: 4px;
+      transition: opacity 0.15s ease-in-out;
+    }
+
+    &.active {
+      background: #FFFFFF;
+      box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.07);
+      border-radius: 4px;
+    }
+    &.add-task {
+      opacity: 0.5;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &__icon-menu {
+      margin: 0 8px;
+      display: flex;
+    }
+    &__title {
+      flex: 1;
+      //text-overflow: ellipsis;
+      //overflow: hidden;
+      width: 160px;
+      //white-space: nowrap;
+    }
+
+    &__icon-close {
+      margin-right: 8px;
+      transition: opacity 0.15s ease-in-out;
+    }
+  }
+}
